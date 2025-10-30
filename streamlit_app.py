@@ -30,24 +30,7 @@ st.write(
   """)
 
 
-# title = st.text_input("Movie title", "Life of Brian")
-# st.write("The current movie title is", title)
-
-##option = st.selectbox(
-  ##  "What is your favourite fruit?",
-    ##("Banana", "Home phone", "Mobile phone"))
-
-##st.write("You selected:", option)
-
-
-
-
-##session = get_active_session()
-## my_dataframe = session.table("smoothies.public.fruit_options").select(col('SEARCH_ON'))
-##st.dataframe(data=my_dataframe, use_container_width=True)
-# st.stop()
-
-#ingredients_list = st.multiselect ('Choose up to 5 ingredients:', my_dataframe,max_selections=5)
+ingredients_list = st.multiselect ('Choose up to 5 ingredients:', my_dataframe,max_selections=5)
 
 if ingredients_list:
     ##st.write(ingredients_list)
