@@ -14,7 +14,7 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(col('SEARC
 # st.dataframe(data=my_dataframe, use_container_width=True)
 # st.stop()
 
-pd_df=dataframe.to_pandas()
+pd_df= dataframe.to_pandas()
 st.dataframe(pd_df)
 st.stop()
 
@@ -30,8 +30,8 @@ st.write(
   """)
 
 
-title = st.text_input("Movie title", "Life of Brian")
-st.write("The current movie title is", title)
+# title = st.text_input("Movie title", "Life of Brian")
+# st.write("The current movie title is", title)
 
 ##option = st.selectbox(
   ##  "What is your favourite fruit?",
@@ -43,9 +43,9 @@ st.write("The current movie title is", title)
 
 
 ##session = get_active_session()
-my_dataframe = session.table("smoothies.public.fruit_options").select(col('SEARCH_ON'))
+## my_dataframe = session.table("smoothies.public.fruit_options").select(col('SEARCH_ON'))
 ##st.dataframe(data=my_dataframe, use_container_width=True)
-st.stop()
+# st.stop()
 
 #ingredients_list = st.multiselect ('Choose up to 5 ingredients:', my_dataframe,max_selections=5)
 
